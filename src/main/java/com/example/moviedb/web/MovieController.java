@@ -10,9 +10,11 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.time.LocalDate;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/movies")
 public class MovieController {
