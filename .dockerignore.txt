@@ -1,0 +1,17 @@
+# .dockerignore
+# 
+# This file prevents unnecessary files from being copied into the 
+# Docker build context, speeding up the build and shrinking the image.
+
+# 1. Ignore build output directories (Crucial for multi-stage builds)
+target/
+build/
+*.jar
+
+# 2. Ignore source control, IDE files, and temporary directories
+.git/
+.gitignore
+.idea/
+.vscode/
+tmp/
+*.iml
